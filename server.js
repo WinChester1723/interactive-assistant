@@ -17,10 +17,10 @@ app.post('/confirm', ( req, res ) => {
     }
     console.log( 'Confirmation request received:', req.body );
     // We are returning the confirmation
-    res.json({ message: 'Изменение подтверждено'});
+    res.json({ message: 'The change has been confirmed'});
 });
 
 // Starting the server and listening to the port
 app.listen(port, () => {
-    console.log( 'The server is running and listening at http://localhost:${port}' );
+    console.log( `The server is running and listening at http://localhost:${port}`);
 });
